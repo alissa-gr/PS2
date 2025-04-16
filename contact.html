@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Benoordenhoutse Judoschool</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/favicon.png" type="image/x-icon">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <!-------Top navigation-------->
+        <section class="topnav">
+            <img src="images/logo.png" alt="Logo Benoordenhoutse Judoschool" class="logo">
+            <!---Desktop--->
+            <div class="desktop-view right-section">
+                <p class="contact-info">
+                    <a href="https://www.youtube.com/@benoordenhoutsejudoschool2426" target="_blank">
+                        <img src="images/youtube.png" alt="YouTube icon" class="youtube-icon">
+                    </a>
+                    <a href="https://www.facebook.com/benoordehoutsejudoschool/" target="_blank">
+                        <img src="images/facebook.png" alt="Facebook icon" class="facebook-icon">
+                    </a>
+                    <img src="images/dot.png" alt="" class="dot-icon">
+                    <a href="tel:+31646030436" class="header-phone">
+                        <img src="images/call.png" alt="Call icon" class="call-icon">06 46030436
+                    </a>
+                </p>
+                <img src="images/Nederlandsevlag.png" alt="Nederlandse vlag" class="flag">
+                <div class="buttons">
+                    <button class="search">
+                        <img src="images/search.png" alt="Search icon" class="button-icon">Zoeken
+                    </button>
+                    <button class="signup-button hover hover">WORD LID</button>
+                </div>
+            </div>
+            <!---Mobile--->
+            <div class="mobile-view right-section">
+                <div class="buttons">
+                    <button class="signup-button hover hover">WORD LID</button>
+                    <img src="images/search.png" alt="Search icon" class="search-icon">
+                    <img src="images/hamburgermenu.png" alt="Menu icon" class="menu-icon">
+                </div>
+            </div>
+        </section>
+
+        <!-------Navigation-blocks-------->
+        <section class="nav">
+            <div class="header-image">
+                <img src="images/headerimg.png" alt="Achtergrond afbeelding" class="background-image">
+                <h1 class="header-title">OVER ONS</h1>
+            </div>
+            <nav class="navigation-blocks">
+                <ul>
+                    <li><a class="hover" href="index.html">Home</a></li>
+                    <li><a class="hover" href="disciplines.html">Disciplines</a></li>
+                    <li><a class="hover" href="informatie.html">Informatie</a></li>
+                    <li><a class="hover" href="roosters.html">Rooster</a></li>
+                    <li class="active-page"><a href="overons.html">Over ons</a></li>
+                    <li><a class="hover" href="media.html">Media</a></li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+
+    <!-- Main -->
+    <main>
+        <div class="contact-container">
+            <h1>Vertrouwenspersoon</h1>
+            <p class="blank-line">De VCP is het eerste aanspreekpunt binnen de Benoordenhoutse Judoschool voor iedereen die te maken heeft
+                met grensoverschrijdend gedrag of daar een vraag over heeft en hier met iemand over wil praten. De VCP
+                is onafhankelijk en is er voor iedereen binnen de organisatie; sporters, ouders, trainers, toeschouwer,
+                bestuurders etc. </P>
+            <p>De VCP kan het thema in de organisatie bespreekbaar maken en preventieve maatregelen opzetten.
+                Onze vertrouwenscontactpersonen zijn:</P>
+            <div class="contact-persons blank-line">
+                <div class="column">
+                    <img src="images/placeholdervrouw.png" alt="Mevr. Linda de Voogd" width="150vw">
+                    <p>Mevr. Linda de Voogd</p>
+                    <p>lddevoogd@gmail.com</p>
+                    <p>06-40390843</p>
+                </div>
+                <div class="column">
+                    <img src="images/placeholderman.png" alt="Dhr. Kolja Meeuwsen" width="150vw">
+                    <p>Dhr. Kolja Meeuwsen</p>
+                    <p>koljameeuwsen@mac.com</p>
+                    <p>06-41190266</p>
+                </div>
+            </div>
+            <h1>Contact</h1>
+            <p class="blank-line">Indien een leerling éénmalig niet op les komt, hoeft er niet te worden afgemeld. Bij langduriger afwezigheid graag contact opnemen met john.f.kleijn@gmail.com</p>
+            <p>De dojo oefenzaal van de Benoordenhoutse Judoschool bevindt zich op het terrein van tennispark WW.
+            Van Hogenhoucklaan 35, 2596 TA Den Haag.</p>
+        </div>
+        <section class="contact-form">
+            <h1>Contactformulier</h1>
+            <form>
+                <label for="naam">Naam</label>
+                <input type="text" id="name" name="name">
+
+                <div class="form-row">
+                    <div class="email-row">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email">
+                    </div>
+                    <div class="phone-row">
+                        <label for="phone">Telefoon</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                </div>
+
+                <label for="subject">Onderwerp</label>
+                <input type="text" id="subject" name="subject">
+
+                <label for="message">Bericht/opmerking of vraag</label>
+                <textarea id="message" name="message" rows="6"></textarea>
+
+                <button type="submit" class="hover" id="send-button">Verzenden</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-left">
+            <img src="images/logo.png" alt="Logo Benoordenhoutse Judoschool" class="footer-logo" height="50px">
+            <div class="footer-title">
+                <h1>Judoschool</h1>
+                <h1>John F. Kleijn</h1>
+            </div>
+        </div>
+        <div class="footer-right">
+            <div class="footer-hyperlinks">
+                <a href="index.html">Home</a>
+                <a href="disciplines.html">Disciplines</a>
+                <a href="informatie.html">Informatie</a>
+                <a href="roosters.html">Roosters</a>
+                <a href="overons.html">Over ons</a>
+                <a href="media.html">Media</a>
+            </div>
+            <nav class="contact-info">
+                <a href="https://www.youtube.com/@benoordenhoutsejudoschool2426" target="_blank">
+                    <img src="images/youtube.png" alt="YouTube icon" class="youtube-icon inverted">
+                </a>
+                <a href="https://www.facebook.com/benoordehoutsejudoschool/" target="_blank">
+                    <img src="images/facebook.png" alt="Facebook icon" class="facebook-icon inverted">
+                </a>
+                <img src="images/dot.png" alt="" class="dot-icon inverted">
+                <a href="tel:+31646030436" class="footer-phone">
+                    <img src="images/call.png" alt="Call icon" class="call-icon inverted"> 06 46030436
+                </a>
+            </nav>
+            <p>&copy; John F. Kleijn @ 2025. Alle rechten voorbehouden.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

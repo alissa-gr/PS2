@@ -1,0 +1,753 @@
+/*Inhoud
+- Top navigation
+- Navigation-blocks
+- Welcome section
+- Blue area
+- News and sponsors
+- Footer
+
+- Discipline page
+- Informatie page
+- Roosters page
+- Over ons page
+- Media page
+- Contact page
+
+- Media queries*/
+
+* {
+    font-family: "Montserrat", sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #F0F0F0;
+}
+
+h1 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.blank-line {
+    margin-bottom: 20px;
+}
+
+.hover:hover {
+    background-color: #0065AB;
+}
+
+/* -------Top navigation---------------- */
+
+.topnav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.logo {
+    height: 50px;
+}
+
+.contact-info a {
+    display: flex;
+    align-items: center;
+    color: black;
+    height: 25px;
+    text-decoration: none;
+}
+
+.contact-info img {
+    margin-right: 10px;
+}
+
+.right-section {
+    display: flex;
+    align-items: center;
+}
+
+.youtube-icon {
+    padding-left: 10px;
+    width: 20px;
+    height: 20px;
+}
+
+.facebook-icon {
+    width: 18px;
+    height: 18px;
+}
+
+.dot-icon {
+    margin-top: 10px;
+    width: 4px;
+    height: 4px;
+}
+
+.call-icon {
+    width: 25px;
+    height: 25px;
+}
+
+.flag {
+    height: 30px;
+}
+
+.header-phone {
+    color: black;
+    margin-right: 12px;
+    text-wrap: nowrap;
+}
+
+.buttons {
+    display: flex;
+    gap: 27px;
+    margin: 14px 29px 16px 27px;
+    font-family: 'Inter', sans-serif;
+}
+
+.signup-button {
+    border: 0px;
+    border-radius: 8px;
+    color: white;
+    background-color: #F1373A;
+    width: 177px;
+    height: 44px;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border: 1px solid #000000;
+    padding: 10px 15px;
+    border-radius: 8px;
+    background-color: white;
+    cursor: pointer;
+    width: 193px;
+    height: 44px;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.search img {
+    background-color: inherit;
+    width: 20px;
+    height: 20px;
+    display: block;
+    margin-right: 5px;
+}
+
+.mobile-view {
+    display: none;
+}
+
+.mobile-view .search-icon {
+    width: 25px;
+    height: 25px;
+}
+
+.mobile-view .menu-icon {
+    width: 27px;
+    height: 27px;
+}
+
+.mobile-view .signup-button {
+    font-size: 1.75vw;
+    width: 17vw;
+    height: 25px;
+}
+
+.contact-info {
+    display: flex;
+}
+
+
+/* -------Navigation blocks------------- */
+.navigation-blocks {
+    margin-top: -90px;
+    position: relative;
+    z-index: 1;
+}
+
+.navigation-blocks ul {
+    list-style-type: none;
+    padding: 8vh;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navigation-blocks li {
+    display: inline-block;
+    width: 14vw;
+}
+
+.navigation-blocks a {
+    text-wrap: nowrap;
+    display: block;
+    text-align: center;
+    padding: 1.5vw 0;
+    margin: 0 0.25vw 0 0.25vw;
+    background-color: #F1373A;
+    color: white;
+    text-decoration: none;
+    font-size: 1.75vw;
+    font-weight: bold;
+}
+
+.active-page a {
+    background-color: #0065AB;
+}
+
+/* ------Header image-------------------- */
+.header-image {
+    position: relative;
+    text-align: center;
+}
+
+.background-image {
+    width: 100%;
+    height: auto;
+}
+
+.header-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 7vw;
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0);
+    font-family: 'Inter', sans-serif;
+    font-weight: 900;
+    white-space: nowrap;
+}
+
+/*main*/
+/* -------Welcome section-------------- */
+.welcome {
+    display: flex;
+    align-self: center;
+    justify-content: space-between;
+    background-color: white;
+    height: auto;
+    margin: 45px 100px 100px 100px;
+    padding: 40px 50px;
+    box-sizing: border-box;
+}
+
+.subtitle {
+    color: grey;
+}
+
+.welcome-text {
+    display: flex;
+    flex-direction: column;
+    margin-right: 50px;
+}
+
+.welcome img {
+    width: 100%;
+    aspect-ratio: 4/3;
+    object-fit: contain;
+}
+
+/* --------Blue area-------------------- */
+.blue-area {
+    background-color: #0065AB;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: start;
+}
+
+.agenda {
+    background-color: white;
+    margin: 50px 50px 50px 100px;
+    padding: 50px 70px;
+    box-sizing: border-box;
+    width: 650px;
+}
+
+.agenda ul {
+    list-style-type: none;
+    line-height: 2.0;
+}
+
+.birthdays {
+    background-color: white;
+    margin: 50px 100px 50px 0px;
+    padding: 50px 70px;
+    box-sizing: border-box;
+    width: 520px;
+}
+
+.birthdays ul {
+    list-style-type: none;
+    line-height: 2.0;
+}
+
+/* -------News and sponsors------------ */
+.news {
+    align-self: center;
+    background-color: white;
+    margin: 100px;
+    padding: 40px 50px;
+    box-sizing: border-box;
+}
+
+.sponsors {
+    display: inline-block;
+    align-content: flex-start;
+    background-color: white;
+    margin: 30px 100px;
+    padding: 40px 50px;
+}
+
+#ooievaarspas {
+    margin-right: 30px;
+    width: 50%
+}
+
+#jeugdfonds {
+    width: 40%
+}
+
+/* -------Footer----------------------- */
+.footer {
+    justify-content: space-between;
+    display: flex;
+    background-color: #828282;
+    margin-top: 30px;
+    padding: 50px 100px;
+    color: white;
+}
+
+.footer h1 {
+    margin-bottom: 5px;
+}
+
+.footer-left {
+    display: flex;
+    box-sizing: border-box;
+    width: 400px;
+}
+
+.footer-logo {
+    margin-right: 20px;
+    height: 50px;
+}
+
+.footer-title {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-right {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    line-height: 2.5;
+    align-self: end;
+}
+
+.footer-hyperlinks {
+    display: flex;
+    text-wrap: nowrap;
+    gap: 20px;
+}
+
+.footer-hyperlinks a {
+    display: flex;
+    text-decoration: none;
+    color: white;
+}
+
+.footer-phone {
+    color: white !important;
+}
+
+footer .contact-info {
+    display: flex;
+}
+
+.inverted {
+    filter: invert(100%);
+    color: white;
+}
+
+/* --------Disciplines page--------------- */
+.grid-container-disciplines {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 40px;
+    margin: 20px 100px;
+    padding: 50px;
+}
+
+.grid-item {
+    position: relative;
+    background-color: white;
+    padding: 50px 50px 70px 50px;
+    text-align: start;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 16px
+}
+
+.clickable-grid-item {
+    color: #000000;
+    text-decoration: none;
+
+}
+
+/* --------Informatie page--------------- */
+.grid-container-informatie {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "item1 item1"
+        "item2 item3";
+    align-items: start;
+    grid-gap: 40px;
+    margin: 20px 100px;
+    padding: 20px;
+}
+.span-examen {
+    grid-column: span 2;
+}
+
+/* --------Roosters page--------------- */
+.grid-container-roosters {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+        "item1 item2 item3"
+        "item4 item4 item4";
+    grid-gap: 40px;
+    margin: 20px 100px;
+    padding: 50px;
+}
+.grid-container-roosters img {
+    width: 100%;
+}
+
+.span-agenda {
+    grid-column: span 3;
+}
+
+/* --------Over ons page--------------- */
+.grid-container-overons {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 40px;
+    margin: 20px 100px;
+    padding: 50px;
+}
+
+/* --------Media page--------------- */
+.grid-container-media {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 40px;
+    margin: 20px 100px;
+    padding: 50px;
+}
+.media-img {
+    width: 30vw;
+}
+
+/* --------Contact page--------------- */
+.contact-container {
+    position: relative;
+    background-color: white;
+    padding: 50px 50px 70px 50px;
+    margin: 20px 100px;
+    text-align: start;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 16px
+}
+
+.contact-persons {
+    display: flex;
+    gap: 20%;
+    margin: 20px 0;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form {
+    background-color: #828282;
+    color: #ffffff;
+    padding: 50px 100px 50px 150px;
+    margin: 50px 0 -30px 0;
+
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    box-sizing: border-box;
+}
+
+.email-row, .phone-row {
+    display: flex;
+    flex-direction: column;
+    margin-right: 0px;
+}
+
+.email-row {
+    width: 40%;
+}
+
+.phone-row {
+    width: 30%;
+}
+
+.form-row {
+    display: flex;
+    gap: 10%;
+}
+
+#name {
+    width: 30%;
+}
+
+#subject {
+    width: 80%;
+}
+
+#message {
+    width: 100%;
+}
+
+#send-button {
+    padding: 10px 15px;
+    margin-top: 20px;
+    border: 0px;
+    border-radius: 8px;
+    color: white;
+    background-color: #F1373A;
+    cursor: pointer;
+    width: 177px;
+    height: 44px;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.read-more {
+    position: absolute;
+    bottom: 20px;
+    right: 25px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #000000;
+    cursor: pointer;
+}
+
+.read-more-top {
+    position: absolute;
+    top: 50px;
+    right: 25px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #000000;
+    cursor: pointer;
+}
+
+/* --------Media queries--------------- */
+@media (max-width: 1154px) {
+    .welcome {
+        flex-wrap: wrap;
+    }
+    .welcometekst {
+        margin-right: 0;
+    }
+    .welcome img {
+        width: 70%;
+    }
+    .blue-area {
+        flex-wrap: wrap;
+    }
+    .agenda {
+        margin: 50px 100px;
+        width:100%;
+    }
+    .birthdays {
+        margin-left: 100px;
+        margin-top: 0;
+        width:100%;
+    }
+}
+
+@media (max-width: 1000px) {
+    .grid-container-roosters {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+            "item1 item2"
+            "item3 item3"
+            "item4 item4";
+    }
+    .span-agenda {
+        grid-column: span 2;
+    }
+    .span-competities {
+        grid-column: span 2;
+    }
+    .footer {
+        flex-wrap: wrap;
+    }
+    .footer-right {
+        align-items: start;
+        margin-top: 20px;
+    }
+    .footer .youtube-icon {
+        padding-left: 0px;
+    }
+}
+
+@media (min-width: 900px) {
+    #ooievaarspas {
+        margin-right: 30px;
+        width: 300px;
+    }
+    #jeugdfonds {
+        height: 250px;
+    }
+}
+
+@media (max-width: 800px) {
+    .navigation-blocks ul {
+        padding: 9.5vh;
+    }
+    .welcome, .agenda, .birthdays, .news, .sponsors, .grid-container-disciplines, .grid-container-informatie, 
+    .grid-container-media, .grid-container-overons, .grid-container-roosters, .contact-container, .contact-form {
+        margin: 50px;
+    }
+    .contact-info {
+        display: none;
+    }
+    .news img {
+        width: 50%
+    }
+    .grid-container-media {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .contact-form {
+        padding: 50px;
+    }
+    .contact-persons{
+        flex-wrap: wrap;
+    }
+    .form-row {
+        flex-wrap: wrap;
+    }
+    .email-row, .phone-row, #name {
+        width: 80%;
+    }
+    .footer-hyperlinks {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-area: 
+            "item1 item2 item3"
+            "item4 item5 item6";
+        grid-column-gap: 30px;
+        grid-row-gap: 0px;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    h1, h2, h3, .contact-form button {
+        font-size: 12px;
+        margin-bottom: 5px;
+    }
+    p, a, .subtitle, .blue-area li, label {
+        font-size: 10px;
+    }
+    .agenda, .birthdays, .news, .sponsors, .contact-form {
+        margin: 20px;
+    }
+    .welcome, .contact-container, .grid-container-disciplines, .grid-container-informatie, .grid-container-media, 
+    .grid-container-overons, .grid-container-roosters {
+        margin: 100px 20px 20px 20px;
+    }
+    .welcome, .agenda, .birthdays, .news, .sponsors, .contact-container, .contact-form {
+        padding: 20px;
+    }
+    .blank-line {
+        margin-bottom: 10px;
+    }
+    .desktop-view {
+        display: none;
+    }
+    .mobile-view {
+        display: flex;
+    }    
+    .navigation-blocks ul {
+        display: none;
+    }
+    .logo {
+        height: 40px;
+    }
+    .buttons {
+        gap: 2vw;
+        margin-right: 0;
+    }    
+    #ooievaarspas {
+        margin-right: 10px;
+    }
+    .news img {
+        display: none;
+    }
+    #send-button {
+        width: 50%;
+        padding: 5px;
+    }
+    .column img {
+        width: 25vw;
+    }
+    input {
+        padding: 2px;
+    } 
+    .footer {
+        padding: 50px 50px;
+    }
+    .footer-hyperlinks {
+        display: none;
+    }
+    .footer-logo {
+        height: 35px;
+    }
+    .youtube-icon {
+        width: 15px;
+        height: 15px;
+    }
+    .facebook-icon{
+        width: 15px;
+        height: 15px;
+    }
+    .dot-icon {
+        width: 3px;
+        height: 3px;
+    }
+    .call-icon {
+        width: 20px;
+        height: 20px;
+    }
+}

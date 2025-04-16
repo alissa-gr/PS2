@@ -574,7 +574,7 @@ input {
     .welcome {
         flex-wrap: wrap;
     }
-    .welcometekst {
+    .welcome-text {
         margin-right: 0;
     }
     .welcome img {

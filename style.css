@@ -51,6 +51,10 @@ h1 {
     height: 50px;
 }
 
+.contact-info {
+    display: flex;
+}
+
 .contact-info a {
     display: flex;
     align-items: center;
@@ -145,26 +149,51 @@ h1 {
     display: none;
 }
 
-.mobile-view .search-icon {
-    width: 25px;
-    height: 25px;
-}
-
-.mobile-view .menu-icon {
-    width: 27px;
-    height: 27px;
-}
-
 .mobile-view .signup-button {
     font-size: 1.75vw;
     width: 17vw;
     height: 25px;
 }
 
-.contact-info {
+.mobile-view .search-icon {
+    width: 25px;
+    height: 25px;
+}
+
+.mobile-view .menu-icon {
+    display: block;
+    cursor: pointer;
+}
+
+#hamburgermenu {
+    width: 27px;
+    height: 27px;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+.menu-toggle:checked + .menu-icon + .menu {
     display: flex;
 }
 
+.menu {
+display: none;
+z-index: 2;
+flex-direction: column;
+background: #ffffff;
+padding: 5px 15px;
+position: absolute;
+  top: 50px;
+  right: 0;
+}
+
+.menu a {
+text-decoration: none;
+color: #000000;
+margin: 10px 0;
+}
 
 /* -------Navigation blocks------------- */
 .navigation-blocks {
